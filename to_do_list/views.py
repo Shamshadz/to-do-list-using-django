@@ -13,8 +13,6 @@ def index(request):
     display = Create.objects.all()
     return render(request,'to_do_list/home.html',{'test':text,'display':display})
 
-def add(request):
-    return render(request,)
 
 def update(request):
     return render(request,)
@@ -26,4 +24,4 @@ def remove(request,pk):
     if request.method == 'POST':
         item.delete()
 
-    return render(request,'to_do_list/home.html')
+    return render(request,'to_do_list/home.html') 
